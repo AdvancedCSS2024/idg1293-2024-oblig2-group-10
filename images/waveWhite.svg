@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="1683.78" height="495.84" viewBox="0 0 1683.78 495.84"><defs><style>.cls-1{fill:#fff;stroke-width:0px;}</style></defs><g id="Background"><path id="Wave_1" class="cls-1" d="M1683.78,0H0v425.61l6.29,3.31c379.91,215.67,915.44-153.1,1168.6-220.24,200.63-53.21,411.89,12.63,507.65,50.2l1.23.65V0Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1683.78 495.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Background">
+    <path id="Wave_1" data-name="Wave 1" class="cls-1" d="M1683.78,0H0v425.61l6.29,3.31c379.91,215.67,915.44-153.1,1168.6-220.24,200.63-53.21,411.89,12.63,507.65,50.2l1.23.65V0Z"/>
+  </g>
+</svg>
