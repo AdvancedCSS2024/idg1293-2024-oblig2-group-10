@@ -168,6 +168,13 @@ body {
   left: 57%;
 }
 
+.earthEyes {
+  width: 50%;
+  top: 405%;
+  left: 23%;
+  z-index: 4;
+}
+
 .footerQR {
   width: 10%;
   top: 410.8%;
