@@ -1,1 +1,102 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+body {
+    margin: 0;
+}
+
+.posterContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.poster {
+    position: absolute;
+    width: 100%;
+}
+.waveWhite {
+    position: relative;
+    width: 100%;
+}
+
+.waveBlue {
+    top: 38%;
+}
+
+.waveLightblue {
+    top: 132%;
+}
+
+.waveRed {
+    top: 265.1%;
+}
+
+.earthBackground {
+    top: 303.6%;
+    z-index: 2;
+}
+
+.surfaceLeft {
+    width: 27.2%;
+    top: 323%;
+    left: 5%;
+    z-index: 3;
+}
+
+.surfaceTop {
+    width: 24.6%;
+    top: 302%;
+    left: 39.2%;
+    z-index: 3;
+}
+
+.surfaceRight {
+    width: 20.6%;
+    top: 317.3%;
+    left: 79.4%;
+    z-index: 3;
+}
+
+.surfaceBot {
+    width: 12%;
+    top: 400%;
+    left: 45%;
+    z-index: 3;
+}
+
+.footerWhitebar {
+    top: 449.7%;
+}
+
+.footerBluebar {
+    top: 461%;
+}
+
+.car {
+    width: 18.5%;
+    top: 145%;
+    left: 43%;
+}
+
+.moon {
+    width: 24%;
+    top: 60%;
+    left: 67%;
+}
+
+.starLarge {
+    width: 5%;
+    top: 57%;
+    left: 88.6%;
+}
+
+.starSmall {
+    width: 4%;
+    top: 80%;
+    left: 92.4%;
+}
+
+.footerWhitebar, .footerBluebar, .car, .moon {
+    z-index: 4;
+}

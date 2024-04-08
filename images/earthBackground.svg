@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1688.68 871.81">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #00b1dc;
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 4.6px;
-      }
-    </style>
-  </defs>
-  <g id="Earth">
-    <path class="cls-1" d="M1536.42,143.75c7.56,4.85,46.25,29.54,51.28,32.85,58.87,38.61,91.22,153.07,97.82,177.15l.85,515.76-1684.07-.58.29-377.22C207.33,147.97,688.83-5.95,1069.55,2.64c124.44,1.73,372.99,84.97,372.12,85.12,34.85,9.8,65.67,32.94,94.75,55.99Z"/>
-  </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="1688.38" height="871.78" viewBox="0 0 1688.38 871.78"><defs><style>.cls-1{fill:#00b1dc;stroke:#231f20;stroke-miterlimit:10;stroke-width:4.6px;}</style></defs><g id="Earth"><path class="cls-1" d="M1686.08,355.05c-31.31-74.89-69.75-140.54-116.74-183.97-11.09-9-22.46-18.66-34.2-28.18.42.29.88.49,1.28.82-29.08-23.05-59.9-46.19-94.75-55.98.88-.16-247.68-83.39-372.12-85.12C700.97-5.71,218.47,153.62,2.3,475.68v393.8h1683.78V355.05Z"/></g></svg>
