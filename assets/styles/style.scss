@@ -192,3 +192,34 @@ body {
     left: 2%;
     z-index: 4;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    top: 450%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+}
+
+footer p {
+    display: inline-block;
+}
+
+.footer__Whitebar {
+    background-color: white;
+}
+
+.footer__Whitebar p {
+    margin-left: 5%;
+}
+
+.footer__Bluebar {
+    background-color: #00509e;
+}
+
+.footer__Bluebar img {
+    width: 20%;
+    margin-left: 5%;
+}
