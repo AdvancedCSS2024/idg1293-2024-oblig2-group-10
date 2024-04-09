@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+}
+
+.posterContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.poster {
+  position: absolute;
+  width: 100%;
+}
+
+.waveWhite {
+  position: relative;
+}
+
+.waveBlue {
+  top: 38%;
+}
+
+.waveLightblue {
+  top: 132%;
+}
+
+.waveRed {
+  top: 265.1%;
+}
+
+.earthBackground {
+  top: 303.6%;
+  z-index: 2;
+}
+
+.surfaceLeft {
+  width: 27.2%;
+  top: 323%;
+  left: 5%;
+  z-index: 3;
+}
+
+.surfaceTop {
+  width: 24.6%;
+  top: 302%;
+  left: 39.2%;
+  z-index: 3;
+}
+
+.surfaceRight {
+  width: 20.6%;
+  top: 317.3%;
+  left: 79.4%;
+  z-index: 3;
+}
+
+.surfaceBot {
+  width: 12%;
+  top: 400%;
+  left: 45%;
+  z-index: 3;
+}
+
+.car {
+  width: 16.5%;
+  top: 142.6%;
+  left: 42%;
+}
+
+.moon {
+  width: 24%;
+  top: 60%;
+  left: 67%;
+}
+
+.starLarge {
+  width: 5%;
+  top: 57%;
+  left: 88.6%;
+}
+
+.starSmall {
+  width: 4%;
+  top: 80%;
+  left: 92.4%;
+}
+
+.car, .moon {
+  z-index: 4;
+}
+
+.shirtYellow {
+  width: 20%;
+  top: 258%;
+  left: 14%;
+}
+
+.shirtBlue {
+  width: 20%;
+  top: 240%;
+  height: 80%;
+  left: 40%;
+}
+
+.shirtGreen {
+  width: 22%;
+  top: 229%;
+  left: 61%;
+}
+
+.shirtYellow, .shirtBlue, .shirtGreen {
+  z-index: 4;
+}
+
+.pollutionSmall {
+  width: 4%;
+}
+.pollutionSmall__One {
+  top: 252%;
+  left: 14%;
+}
+.pollutionSmall__Two {
+  top: 245%;
+  left: 27%;
+}
+.pollutionSmall__Three {
+  top: 268%;
+  left: 35%;
+}
+.pollutionSmall__Four {
+  top: 237%;
+  left: 37.5%;
+}
+.pollutionSmall__Five {
+  top: 226%;
+  left: 46%;
+}
+.pollutionSmall__Six {
+  top: 226%;
+  left: 73.4%;
+}
+.pollutionSmall__Seven {
+  top: 214%;
+  left: 81%;
+}
+.pollutionSmall__Eight {
+  top: 250%;
+  left: 83%;
+}
+
+.pollutionMedium {
+  width: 6%;
+}
+.pollutionMedium__One {
+  top: 222%;
+  left: 31%;
+}
+.pollutionMedium__Two {
+  top: 198%;
+  left: 71.5%;
+}
+
+.pollutionLarge {
+  width: 10%;
+  top: 214%;
+  left: 57%;
+}
+
+.earthEyes {
+  width: 50%;
+  top: 405%;
+  left: 23%;
+  z-index: 4;
+}
+
+.footerQR {
+  width: 10%;
+  top: 410.8%;
+  left: 2%;
+  z-index: 4;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  top: 450%;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+footer p {
+  display: inline-block;
+}
+
+.footer__Whitebar {
+  background-color: white;
+}
+
+.footer__Whitebar p {
+  margin-left: 5%;
+}
+
+.footer__Bluebar {
+  background-color: #00509e;
+}
+
+.footer__Bluebar img {
+  width: 20%;
+  margin-left: 5%;
+}/*# sourceMappingURL=style.css.map */
