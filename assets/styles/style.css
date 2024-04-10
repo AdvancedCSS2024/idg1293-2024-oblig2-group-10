@@ -2,6 +2,36 @@ body {
   margin: 0;
 }
 
+header {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 10;
+}
+
+header h1 {
+  color: #0C5BA9;
+  width: 10ch;
+  font-size: 3.5vw;
+  font-family: "open-sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+header p {
+  font-family: "marydale", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  width: 22ch;
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+header span {
+  color: #21A35C;
+}
+
 .posterContainer {
   display: flex;
   flex-direction: column;
@@ -61,6 +91,12 @@ body {
   top: 400%;
   left: 45%;
   z-index: 3;
+}
+
+.carText {
+  width: 35%;
+  top: 174%;
+  left: 5%;
 }
 
 .car {
@@ -183,8 +219,8 @@ body {
 }
 
 footer {
-  top: 450%;
   position: absolute;
+  top: 450%;
   width: 100%;
   z-index: 10;
 }
@@ -202,6 +238,8 @@ footer p {
   font-size: 1.19vw;
   width: 120ch;
   font-family: "marydale", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer__Bluebar {
@@ -209,7 +247,8 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.5% 0 1.5% 0;
+  width: 100%;
+  font-size: 1vw;
 }
 .footer__Bluebar-pOne {
   padding-left: 58%;
@@ -220,7 +259,7 @@ footer p {
 }
 .footer__Bluebar-pThree {
   text-wrap: nowrap;
-  padding-left: 50%;
+  padding-left: 20%;
 }
 
 .footer__Bluebar img {
@@ -229,18 +268,73 @@ footer p {
 }
 
 .footer__Bluebar p {
+  font-family: "marydale", sans-serif;
   color: white;
   margin-left: 5%;
-  font-family: "marydale", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
-.footer__Bluebar svg {
-  height: 100px;
+.footer__Bluebar div:last-child {
+  font-weight: 800;
 }
 
-.footerBar {
+.footerLine {
+  position: relative;
   stroke: white;
-  stroke-width: 5;
+  stroke-width: 0.3vw;
   stroke-linecap: round;
+}
+
+.tiktokText {
+  position: absolute;
+  z-index: 10;
+  top: 97%;
+  left: 5%;
+  font-family: "marydale", sans-serif;
+  color: white;
+  width: 26ch;
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.surfaceText {
+  position: absolute;
+  z-index: 10;
+  font-family: "marydale", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  width: 13ch;
+}
+.surfaceText-left {
+  top: 352%;
+  left: 12%;
+}
+.surfaceText-top {
+  top: 316%;
+  left: 43.5%;
+  text-align: center;
+}
+.surfaceText-bot {
+  top: 401%;
+  left: 46.5%;
+  width: 8ch;
+}
+.surfaceText-right {
+  top: 330%;
+  left: 87.2%;
+  width: 7ch;
+}
+.surfaceText-right p {
+  padding-bottom: 5vw;
+}
+.surfaceText-right p:last-child {
+  width: 10ch;
+}
+.surfaceText-middle {
+  top: 360%;
+  left: 30%;
+  width: 60ch;
+  font-size: 3.5vw;
 }/*# sourceMappingURL=style.css.map */
