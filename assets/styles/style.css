@@ -96,7 +96,7 @@ header span {
 .carText {
   width: 35%;
   top: 174%;
-  left: 5%;
+  left: 4.4%;
 }
 
 .car {
@@ -105,10 +105,30 @@ header span {
   left: 42%;
 }
 
+.carSmoke {
+  content: "";
+  position: absolute;
+  border-radius: 40px;
+  border: 0.8vw solid grey;
+  z-index: 3;
+  top: 168.4%;
+  left: 39.8%;
+}
+.carSmoke::after {
+  content: "";
+  position: absolute;
+  border-radius: 40px;
+  border: 1.1vw solid grey;
+}
+
 .moon {
   width: 24%;
   top: 60%;
   left: 67%;
+}
+
+.car, .moon {
+  z-index: 4;
 }
 
 .starLarge {
@@ -121,10 +141,6 @@ header span {
   width: 4%;
   top: 80%;
   left: 92.4%;
-}
-
-.car, .moon {
-  z-index: 4;
 }
 
 .shirtYellow {
