@@ -118,40 +118,43 @@ body {
   width: 4%;
 }
 .pollutionSmall__One {
-  top: 252%;
+  top: 250%;
   left: 14%;
 }
 .pollutionSmall__Two {
-  top: 245%;
+  top: 243%;
   left: 27%;
 }
 .pollutionSmall__Three {
-  top: 268%;
+  top: 265%;
   left: 35%;
 }
 .pollutionSmall__Four {
-  top: 237%;
+  top: 235%;
   left: 37.5%;
 }
 .pollutionSmall__Five {
-  top: 226%;
+  top: 222%;
   left: 46%;
 }
 .pollutionSmall__Six {
-  top: 226%;
+  top: 223%;
   left: 73.4%;
 }
 .pollutionSmall__Seven {
-  top: 214%;
+  top: 211%;
   left: 81%;
 }
 .pollutionSmall__Eight {
-  top: 250%;
+  top: 247%;
   left: 83%;
 }
 
 .pollutionMedium {
   width: 6%;
+  animation-name: move;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 .pollutionMedium__One {
   top: 222%;
@@ -166,8 +169,22 @@ body {
   width: 10%;
   top: 214%;
   left: 57%;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes move {
+  0% {
+    top: 210%;
+  }
+  50% {
+    top: 170%;
+  }
+  100% {
+    top: 210%;
+  }
+}
 .earthEyes {
   width: 50%;
   top: 405%;
