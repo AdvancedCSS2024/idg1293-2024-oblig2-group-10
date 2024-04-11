@@ -240,7 +240,7 @@ header span {
 
 @keyframes move {
     0% {top: 210%;}
-    50% {top: 170%;}
+    50% {top: 185%;}
     100% {top: 210%;}
 }
 
@@ -377,7 +377,7 @@ footer p {
     &-middle {
         top: 360%;
         left: 30%;
-        width: 60ch;
+        width: 25ch;
         font-size: 3.5vw;
     }
 }

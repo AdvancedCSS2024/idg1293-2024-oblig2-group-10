@@ -231,7 +231,7 @@ header span {
     top: 210%;
   }
   50% {
-    top: 170%;
+    top: 185%;
   }
   100% {
     top: 210%;
@@ -368,6 +368,6 @@ footer p {
 .surfaceText-middle {
   top: 360%;
   left: 30%;
-  width: 60ch;
+  width: 25ch;
   font-size: 3.5vw;
 }/*# sourceMappingURL=style.css.map */
