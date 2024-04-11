@@ -3,14 +3,14 @@
 body {
     margin: 0;
 }
-
+// Positions the header elements
 header {
     position: absolute;
     top: 10%;
     left: 5%;
     z-index: 10;
 }
-
+// Sets the character width to format the text and vw to scale font size
 header h1 {
     color: #0C5BA9;
     width: 10ch;
@@ -29,22 +29,22 @@ header p {
     font-size: 2vw;
     margin-top: 0;
 }
-
+// Using a span to change the color of the word "miljø" mid sentence
 header span {
     color: #21A35C;
 }
-
+// Sets flex for the main element container, and applies position relative for the absolute positioned elements
 .posterContainer {
     display: flex;
     flex-direction: column;
     position: relative;
-    box-sizing: border-box;
 }
-
+// Sets absolute position and width for all the main elements
 .poster {
     position: absolute;
     width: 100%;
 }
+// positions for the background elements, first element also has relative for the absolute positions of the other elements
 .waveWhite {
     position: relative;
 }
@@ -65,7 +65,7 @@ header span {
     top: 303.6%;
     z-index: 2;
 }
-
+// Placements for the planet surface, I should've used a common class for z-index and the & feature for the positions like I do later
 .surfaceLeft {
     width: 27.2%;
     top: 323%;
@@ -93,19 +93,19 @@ header span {
     left: 45%;
     z-index: 3;
 }
-
+// Text for the car SVG
 .carText {
     width: 35%;
     top: 174%;
     left: 4.4%;
   }
-
+// Placement and size for the car SVG
 .car {
     width: 16.5%;
     top: 142.6%;
     left: 42%;
 }
-
+// CSS drawing for the car image, adds smoke to indicate pollution
 .carSmoke {
     content: '';
     position: absolute;
@@ -122,7 +122,7 @@ header span {
     border: 1.1vw solid grey;
     }
 }
-
+// placement for the elements
 .moon {
     width: 24%;
     top: 60%;
@@ -163,11 +163,11 @@ header span {
     top: 229%;
     left: 61%;
 }
-
+// Shared z-index for the children SVGs
 .shirtYellow, .shirtBlue, .shirtGreen {
     z-index: 4;
 }
-
+// positions for the pollution SVGs, like I should've done with the surface elements before
 .pollutionSmall {
     width: 4%;
     
@@ -211,13 +211,13 @@ header span {
         left: 83%;
     }
 }
-
+// Medium pollution SVG with keyframe/CSS animation
 .pollutionMedium {
     width: 6%;
     animation-name: move;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-
+    // their placements
     &__One {
         top: 222%;
         left: 31%;
@@ -259,7 +259,7 @@ header span {
     left: 2%;
     z-index: 4;
 }
-
+// footer positioning and content formatting
 footer {
     position: absolute;
     top: 451%;
@@ -270,7 +270,7 @@ footer {
 footer p {
     display: inline-block;
 }
-
+// the white part of the footer
 .footer__Whitebar {
     display: flex;
     background-color: white;
@@ -284,7 +284,7 @@ footer p {
     font-weight: 700;
     font-style: normal;
 }
-
+// the blue part of the footer
 .footer__Bluebar {
     background-color: #00509e;
     display: flex;
@@ -305,7 +305,7 @@ footer p {
         margin-right: 1vw;
     }
 }
-
+// the NTNU logo for the footer
 .footer__Bluebar img {
     width: 33.33%;
     margin: 0 1% 0 5%;
@@ -317,18 +317,18 @@ footer p {
     margin-left: 5%;
     font-size: 1.2vw;
 }
-
+// adds higher font weight to the last text (carlos contact info)
 .footer__Bluebar div:last-child {
     font-weight: 800;
 }
-
+// the styles for the SVG line drawing in the footer
 .footerLine {
     position: relative;
     stroke: white;
     stroke-width: 0.3vw;
     stroke-linecap: round;
 }
-
+// styles and formatting for the blue wave text
 .tiktokText {
     position: absolute;
     z-index: 10;
@@ -340,7 +340,7 @@ footer p {
     font-weight: 600;
     font-size: 2vw;
 }
-
+// position and formatting for the text inside the planet's surfaces
 .surfaceText {
     position: absolute;
     z-index: 10;

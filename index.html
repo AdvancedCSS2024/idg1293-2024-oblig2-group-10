@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IDG1293-2024 Oblig 2</title>
   <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- External font style sheet for the beautiful font -->
   <link rel="stylesheet" href="https://use.typekit.net/lnn5tkg.css">
   <!-- Implementation of GSAP below with JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
@@ -15,90 +16,93 @@
 
 <body>
   <!-- Your implementation of the poster goes here. -->
+  <!-- Primary container for the poster elements -->
   <div class="posterContainer">
+    <!-- Header for the first text since it's at the top of the page with h1 -->
     <header>
       <h1>Vær en <span>miljø</span>detektiv</h1>
       <p>Se om du kan finne ut hvor stort karbonfotavtrykk du har</p>
     </header>
+    <!-- Text for the blue wave -->
     <div class="tiktokText">
       <p>
         Hvis 1,1 billioner brukere bruker tiktok i fem minutter, tilsvarer det:
       </p>
     </div>
 
-
+    <!-- Text for the green surface on the planet, all the way to the left -->
     <div class="surfaceText surfaceText-left">
       <p>
         Unngå å bytte ut telefonen din ofte (det fører til mye e-avfall)
       </p>
     </div>
-
+    <!-- Text for the green surface text to the top of the planet -->
     <div class="surfaceText surfaceText-top">
       <p>
         Koble fra strømmen når du ikke bruker enhetene dine
       </p>
     </div>
-
+    <!-- Text for the green surface in the middle of the planet, towards the bottom -->
     <div class="surfaceText surfaceText-bot">
       <p>
         Slett unna e-poster du ikke trenger
       </p>
     </div>
-
+    <!-- Text for the surface all the way to the right, top of the surface -->
     <div class="surfaceText surfaceText-right">
       <p>
         Reduser skjermtiden din og bruk heller mer tid ute. (Les en bok, gå ut og lek, gå en tur)
       </p>
     </div>
-
+    <!-- Same as above, but for the bottom part of the right hand surface -->
     <div class="surfaceText surfaceText-rightTwo">
       <p>
         Reduser lysstyrken på skjermen din
       </p>
     </div>
-
+    <!-- Large text in the middle of the planet -->
     <div class="surfaceText surfaceText-middle">
       <h1>
         Hva kan du gjøre?
       </h1>
     </div>
-
+    <!-- Container for the CSS drawing behind the car, creates smoke to indicate pollution -->
     <div class="carSmoke">
     </div>
-
-    <img class="poster waveWhite" src="images/waveWhite.svg" alt="">
-    <img class="poster waveBlue" src="images/waveBlue.svg" alt="">
-    <img class="poster waveLightblue" src="images/waveLightblue.svg" alt="">
-    <img class="poster waveRed" src="images/waveRed.svg" alt="">
-    <img class="poster earthBackground" src="images/earthBackground.svg" alt="">
-    <img class="poster surfaceLeft" src="images/surfaceLeft.svg" alt="">
-    <img class="poster surfaceTop" src="images/surfaceTop.svg" alt="">
-    <img class="poster surfaceBot" src="images/surfaceBot.svg" alt="">
-    <img class="poster surfaceRight" src="images/surfaceRight.svg" alt="">
-    <img class="poster earthEyes" src="images/earthEyes.svg" alt="">
-    <img class="poster starLarge" src="images/starLarge.svg" alt="">
-    <img class="poster starSmall" src="images/starSmall.svg" alt="">
-    <img class="poster moon" src="images/moon.svg" alt="">
-    <img class="poster carText" src="images/74turer.svg" alt="">
-    <img class="poster car" src="images/car.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__One" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Two" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Three" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Four" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Five" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Six" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Seven" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionSmall pollutionSmall__Eight" src="images/pollutionSmall.svg" alt="">
-    <img class="poster pollutionMedium pollutionMedium__One" src="images/pollutionMedium.svg" alt="">
-    <img class="poster pollutionMedium pollutionMedium__Two" src="images/pollutionMedium.svg" alt="">
-    <img class="poster pollutionLarge" src="images/pollutionLarge.svg" alt="">
-    <img class="poster shirtYellow" src="images/shirtYellow.svg" alt="">
-    <img class="poster shirtBlue" src="images/shirtBlue.svg" alt="">
-    <img class="poster shirtGreen" src="images/shirtGreen.svg" alt="">
-    <img class="poster footerQR" src="images/footerQR.svg" alt="">
-    
+    <!-- The SVGs, linked in img tags so they are cached and don't need to be loaded each time you reload the poster -->
+    <img class="poster waveWhite" src="images/waveWhite.svg" alt="hvit bølge som former første del av bakgrunnen">
+    <img class="poster waveBlue" src="images/waveBlue.svg" alt="blå bølge som former andre del av bakgrunnen">
+    <img class="poster waveLightblue" src="images/waveLightblue.svg" alt="lyseblå bølge som former tredje del av bakgrunnen">
+    <img class="poster waveRed" src="images/waveRed.svg" alt="rød bølge som former tredje del av bakgrunnen">
+    <img class="poster earthBackground" src="images/earthBackground.svg" alt="blå halv planet som former siste del av bakgrunnen">
+    <img class="poster surfaceLeft" src="images/surfaceLeft.svg" alt="landmasse til venstre på en planet">
+    <img class="poster surfaceTop" src="images/surfaceTop.svg" alt="landmasse på toppen av en planet">
+    <img class="poster surfaceBot" src="images/surfaceBot.svg" alt="landmasse på bunnen av en planet">
+    <img class="poster surfaceRight" src="images/surfaceRight.svg" alt="landmasse på høyre side av en planet">
+    <img class="poster earthEyes" src="images/earthEyes.svg" alt="øyne i midten av en planet">
+    <img class="poster starLarge" src="images/starLarge.svg" alt="stor roterende stjerne">
+    <img class="poster starSmall" src="images/starSmall.svg" alt="liten roterende stjerne">
+    <img class="poster moon" src="images/moon.svg" alt="roterende måne med smilende ansikt">
+    <img class="poster carText" src="images/74turer.svg" alt="74 turer til månen og tilbake">
+    <img class="poster car" src="images/car.svg" alt="bil som skifter farge">
+    <img class="poster pollutionSmall pollutionSmall__One" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Two" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Three" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Four" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Five" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Six" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Seven" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionSmall pollutionSmall__Eight" src="images/pollutionSmall.svg" alt="liten forurensende sky med ansikt">
+    <img class="poster pollutionMedium pollutionMedium__One" src="images/pollutionMedium.svg" alt="medium forurensende sky med ansikt">
+    <img class="poster pollutionMedium pollutionMedium__Two" src="images/pollutionMedium.svg" alt="medium forurensende sky med ansikt">
+    <img class="poster pollutionLarge" src="images/pollutionLarge.svg" alt="stor forurensende sky med ansikt">
+    <img class="poster shirtYellow" src="images/shirtYellow.svg" alt="barn med gul skjorte">
+    <img class="poster shirtBlue" src="images/shirtBlue.svg" alt="barn med blå skjorte">
+    <img class="poster shirtGreen" src="images/shirtGreen.svg" alt="barn med grønn skjorte">
+    <img class="poster footerQR" src="images/footerQR.svg" alt="QR kode til nettsiden">
+    <!-- The footer, containing a white half and a blue half -->
     <footer>
-
+      <!-- The white half containing information about the poster -->
       <div class="footer__Whitebar">
         <p>TIKTOK 2.63 gco2e/minutt
           https://www.comparethemarket.com.au/energy/features/social-carbon-footprint-calculator/ • Vi forutsetter at å
@@ -106,10 +110,10 @@
           En tur til månen: 96.5T CO2 (tur/retur: 193T CO2)1.1 aktive brukere på TIKTOK i 5 min/dag = 148 til månen,
           eller 74 turer tur/retur. • Avstand Jorden-månen: 384399.861 km</p>
       </div>
-
+      <!-- The blue part containing contanct information, download for the poster and NTNU logo -->
       <div class="footer__Bluebar">
         <img src="images/footerLogo.svg" alt="">
-
+        <!-- SVG drawing using line to make the separation in the footer, uses vw and % to scale with the other elements -->
         <div><svg height="4vw" width="10">
             <line class="footerLine" x1="5" y1="20%" x2="5" y2="85%" />
           </svg></div>
@@ -118,7 +122,7 @@
           <p class="footer__Bluebar-pOne">Last ned plakat:</p>
           <p class="footer__Bluebar-pTwo">https://www.ntnu.no/web/design/digital-barekraft/illustrasjoner</p>
         </div>
-
+        <!-- A second SVG drawing using line to make the separation in the footer -->
         <div><svg height="4vw" width="10">
           <line class="footerLine" x1="5" y1="20%" x2="5" y2="85%" />
           </svg></div>
