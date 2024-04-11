@@ -4,6 +4,36 @@ body {
     margin: 0;
 }
 
+header {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 10;
+}
+
+header h1 {
+    color: #0C5BA9;
+    width: 10ch;
+    font-size: 3.5vw;
+    font-family: "open-sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+header p {
+    font-family: "marydale", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    width: 22ch;
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+header span {
+    color: #21A35C;
+}
+
 .posterContainer {
     display: flex;
     flex-direction: column;
@@ -64,16 +94,43 @@ body {
     z-index: 3;
 }
 
+.carText {
+    width: 35%;
+    top: 174%;
+    left: 4.4%;
+  }
+
 .car {
     width: 16.5%;
     top: 142.6%;
-    left: 42%
+    left: 42%;
+}
+
+.carSmoke {
+    content: '';
+    position: absolute;
+    border-radius: 40px;
+    border: 0.8vw solid grey;
+    z-index: 3;
+    top: 168.4%;
+    left: 39.8%;
+
+    &::after {
+    content: '';
+    position: absolute;
+    border-radius: 40px;
+    border: 1.1vw solid grey;
+    }
 }
 
 .moon {
     width: 24%;
     top: 60%;
     left: 67%;
+}
+
+.car, .moon {
+    z-index: 4;
 }
 
 .starLarge {
@@ -86,10 +143,6 @@ body {
     width: 4%;
     top: 80%;
     left: 92.4%;
-}
-
-.car, .moon {
-    z-index: 4;
 }
 
 .shirtYellow {
@@ -206,13 +259,10 @@ body {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    top: 450%;
     position: absolute;
+    top: 450%;
     width: 100%;
     z-index: 10;
-
 }
 
 footer p {
@@ -224,14 +274,111 @@ footer p {
 }
 
 .footer__Whitebar p {
-    margin-left: 5%;
+    margin: 0 5% 0 5%;
+    font-size: 1.19vw;
+    width: 120ch;
+    font-family: "marydale", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .footer__Bluebar {
     background-color: #00509e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-size: 1vw;
+    &-pOne {
+        padding-left: 58%;
+        display: inline;
+    }
+
+    &-pTwo {
+        display: inline;
+    }
+
+    &-pThree {
+        text-wrap: nowrap;
+        padding-left: 20%
+    }
 }
 
 .footer__Bluebar img {
-    width: 20%;
-    margin-left: 5%;
+    width: 33.33%;
+    margin: 0 1% 0 5%;
 }
+
+.footer__Bluebar p {
+    font-family: "marydale", sans-serif;
+    color: white;
+    margin-left: 5%;
+    font-size: 1.2vw;
+}
+
+.footer__Bluebar div:last-child {
+    font-weight: 800;
+}
+
+.footerLine {
+    position: relative;
+    stroke: white;
+    stroke-width: 0.3vw;
+    stroke-linecap: round;
+}
+
+.tiktokText {
+    position: absolute;
+    z-index: 10;
+    top: 97%;
+    left: 5%;
+    font-family: "marydale", sans-serif;
+    color: white;
+    width: 26ch;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.surfaceText {
+    position: absolute;
+    z-index: 10;
+    font-family: "marydale", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7vw;
+    line-height: 2vw;
+    width: 13ch;
+    &-left {
+        top: 352%;
+        left: 12%;
+    }
+
+    &-top {
+        top: 316%;
+        left: 43.5%;
+        text-align: center;
+    }
+
+    &-bot {
+        top: 401%;
+        left: 46.5%;
+        width: 8ch;
+    }
+
+    &-right {
+        top: 330%;
+        left: 87.2%;
+        width: 7ch;
+    } &-right p {
+        padding-bottom: 5vw;
+    } &-right p:last-child {
+        width: 10ch;
+    }
+    &-middle {
+        top: 360%;
+        left: 30%;
+        width: 60ch;
+        font-size: 3.5vw;
+    }
+}
+
