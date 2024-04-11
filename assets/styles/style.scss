@@ -229,6 +229,7 @@ header span {
     }
 }
 
+// Implemented animation at 3s to differentiate between the larger one and medium polution
 .pollutionLarge {
     width: 10%;
     top: 214%;
@@ -238,6 +239,7 @@ header span {
     animation-iteration-count: infinite;
 }
 
+// Keyframe animation for the floating movement for the larger pollution clouds
 @keyframes move {
     0% {top: 210%;}
     50% {top: 185%;}
