@@ -260,7 +260,7 @@ header span {
 
 footer {
     position: absolute;
-    top: 450%;
+    top: 451%;
     width: 100%;
     z-index: 10;
 }
@@ -270,12 +270,13 @@ footer p {
 }
 
 .footer__Whitebar {
+    display: flex;
     background-color: white;
 }
 
 .footer__Whitebar p {
     margin: 0 5% 0 5%;
-    font-size: 1.19vw;
+    font-size: 1vw;
     width: 120ch;
     font-family: "marydale", sans-serif;
     font-weight: 700;
@@ -287,7 +288,6 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     font-size: 1vw;
     &-pOne {
         padding-left: 58%;
@@ -299,8 +299,8 @@ footer p {
     }
 
     &-pThree {
-        text-wrap: nowrap;
-        padding-left: 20%
+        display: block;
+        margin-right: 1vw;
     }
 }
 
@@ -369,11 +369,13 @@ footer p {
         top: 330%;
         left: 87.2%;
         width: 7ch;
-    } &-right p {
-        padding-bottom: 5vw;
-    } &-right p:last-child {
-        width: 10ch;
+    } 
+
+    &-rightTwo {
+        top: 428%;
+        left: 85.5%;
     }
+
     &-middle {
         top: 360%;
         left: 30%;
