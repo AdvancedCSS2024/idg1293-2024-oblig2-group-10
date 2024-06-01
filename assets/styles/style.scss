@@ -1,1 +1,388 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+body {
+    margin: 0;
+}
+// Positions the header elements
+header {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 10;
+}
+// Sets the character width to format the text and vw to scale font size
+header h1 {
+    color: #0C5BA9;
+    width: 10ch;
+    font-size: 3.5vw;
+    font-family: "open-sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+header p {
+    font-family: "marydale", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    width: 22ch;
+    font-size: 2vw;
+    margin-top: 0;
+}
+// Using a span to change the color of the word "miljø" mid sentence
+header span {
+    color: #21A35C;
+}
+// Sets flex for the main element container, and applies position relative for the absolute positioned elements
+.posterContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+// Sets absolute position and width for all the main elements
+.poster {
+    position: absolute;
+    width: 100%;
+}
+// positions for the background elements, first element also has relative for the absolute positions of the other elements
+.waveWhite {
+    position: relative;
+}
+
+.waveBlue {
+    top: 38%;
+}
+
+.waveLightblue {
+    top: 132%;
+}
+
+.waveRed {
+    top: 265.1%;
+}
+
+.earthBackground {
+    top: 303.6%;
+    z-index: 2;
+}
+// Placements for the planet surface, I should've used a common class for z-index and the & feature for the positions like I do later
+.surfaceLeft {
+    width: 27.2%;
+    top: 323%;
+    left: 5%;
+    z-index: 3;
+}
+
+.surfaceTop {
+    width: 24.6%;
+    top: 302%;
+    left: 39.2%;
+    z-index: 3;
+}
+
+.surfaceRight {
+    width: 20.6%;
+    top: 317.3%;
+    left: 79.4%;
+    z-index: 3;
+}
+
+.surfaceBot {
+    width: 12%;
+    top: 400%;
+    left: 45%;
+    z-index: 3;
+}
+// Text for the car SVG
+.carText {
+    width: 35%;
+    top: 174%;
+    left: 4.4%;
+  }
+// Placement and size for the car SVG
+.car {
+    width: 16.5%;
+    top: 142.6%;
+    left: 42%;
+}
+// CSS drawing for the car image, adds smoke to indicate pollution
+.carSmoke {
+    content: '';
+    position: absolute;
+    border-radius: 40px;
+    border: 0.8vw solid grey;
+    z-index: 3;
+    top: 168.4%;
+    left: 39.8%;
+
+    &::after {
+    content: '';
+    position: absolute;
+    border-radius: 40px;
+    border: 1.1vw solid grey;
+    }
+}
+// placement for the elements
+.moon {
+    width: 24%;
+    top: 60%;
+    left: 67%;
+}
+
+.car, .moon {
+    z-index: 4;
+}
+
+.starLarge {
+    width: 5%;
+    top: 57%;
+    left: 88.6%;
+}
+
+.starSmall {
+    width: 4%;
+    top: 80%;
+    left: 92.4%;
+}
+
+.shirtYellow {
+    width: 20%;
+    top: 258%;
+    left: 14%;
+}
+
+.shirtBlue {
+    width: 20%;
+    top: 240%;
+    height: 80%;
+    left: 40%;
+}
+
+.shirtGreen {
+    width: 22%;
+    top: 229%;
+    left: 61%;
+}
+// Shared z-index for the children SVGs
+.shirtYellow, .shirtBlue, .shirtGreen {
+    z-index: 4;
+}
+// positions for the pollution SVGs, like I should've done with the surface elements before
+.pollutionSmall {
+    width: 4%;
+    
+    &__One {
+        top: 250%;
+        left: 14%;
+    }
+
+    &__Two {
+        top: 243%;
+        left: 27%;
+    }
+
+    &__Three {
+        top: 265%;
+        left: 35%;
+    }
+
+    &__Four {
+        top: 235%;
+        left: 37.5%;
+    }
+
+    &__Five {
+        top: 222%;
+        left: 46%;
+    }
+
+    &__Six {
+        top: 223%;
+        left: 73.4%;
+    }
+
+    &__Seven {
+        top: 211%;
+        left: 81%;
+    }
+
+    &__Eight {
+        top: 247%;
+        left: 83%;
+    }
+}
+// Medium pollution SVG with keyframe/CSS animation
+.pollutionMedium {
+    width: 6%;
+    animation-name: move;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    // their placements
+    &__One {
+        top: 222%;
+        left: 31%;
+    }
+
+    &__Two {
+        top: 198%;
+        left: 71.5%;
+    }
+}
+
+// Implemented animation at 3s to differentiate between the larger one and medium polution
+.pollutionLarge {
+    width: 10%;
+    top: 214%;
+    left: 57%;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+// Keyframe animation for the floating movement for the larger pollution clouds
+@keyframes move {
+    0% {top: 210%;}
+    50% {top: 185%;}
+    100% {top: 210%;}
+}
+
+.earthEyes {
+    width: 50%;
+    top: 405%;
+    left: 23%;
+    z-index: 4;
+}
+
+.footerQR {
+    width: 10%;
+    top: 410.8%;
+    left: 2%;
+    z-index: 4;
+}
+// footer positioning and content formatting
+footer {
+    position: absolute;
+    top: 451%;
+    width: 100%;
+    z-index: 10;
+}
+
+footer p {
+    display: inline-block;
+}
+// the white part of the footer
+.footer__Whitebar {
+    display: flex;
+    background-color: white;
+}
+
+.footer__Whitebar p {
+    margin: 0 5% 0 5%;
+    font-size: 1vw;
+    width: 120ch;
+    font-family: "marydale", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+// the blue part of the footer
+.footer__Bluebar {
+    background-color: #00509e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1vw;
+    &-pOne {
+        padding-left: 58%;
+        display: inline;
+    }
+
+    &-pTwo {
+        display: inline;
+    }
+
+    &-pThree {
+        display: block;
+        margin-right: 1vw;
+    }
+}
+// the NTNU logo for the footer
+.footer__Bluebar img {
+    width: 33.33%;
+    margin: 0 1% 0 5%;
+}
+
+.footer__Bluebar p {
+    font-family: "marydale", sans-serif;
+    color: white;
+    margin-left: 5%;
+    font-size: 1.2vw;
+}
+// adds higher font weight to the last text (carlos contact info)
+.footer__Bluebar div:last-child {
+    font-weight: 800;
+}
+// the styles for the SVG line drawing in the footer
+.footerLine {
+    position: relative;
+    stroke: white;
+    stroke-width: 0.3vw;
+    stroke-linecap: round;
+}
+// styles and formatting for the blue wave text
+.tiktokText {
+    position: absolute;
+    z-index: 10;
+    top: 97%;
+    left: 5%;
+    font-family: "marydale", sans-serif;
+    color: white;
+    width: 26ch;
+    font-weight: 600;
+    font-size: 2vw;
+}
+// position and formatting for the text inside the planet's surfaces
+.surfaceText {
+    position: absolute;
+    z-index: 10;
+    font-family: "marydale", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7vw;
+    line-height: 2vw;
+    width: 13ch;
+    &-left {
+        top: 352%;
+        left: 12%;
+    }
+
+    &-top {
+        top: 316%;
+        left: 43.5%;
+        text-align: center;
+    }
+
+    &-bot {
+        top: 401%;
+        left: 46.5%;
+        width: 8ch;
+    }
+
+    &-right {
+        top: 330%;
+        left: 87.2%;
+        width: 7ch;
+    } 
+
+    &-rightTwo {
+        top: 428%;
+        left: 85.5%;
+    }
+
+    &-middle {
+        top: 360%;
+        left: 30%;
+        width: 25ch;
+        font-size: 3.5vw;
+    }
+}
+
